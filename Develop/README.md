@@ -1,8 +1,8 @@
-# exampleREADME
+# g
 
-  https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen)
+  ![License: Apache+2.0](https://img.shields.io/static/v1?label=license&message=Apache+2.0&color=green)
 
-  ## Table of COntents:
+  ## Table of Contents:
   *[Description](#Description)
   *[Installation](#Installation)
   *[Usage Information](#Usage)
@@ -13,13 +13,13 @@
   *[Email](#Email)
 
   ## Descritpion
-  Big project yo
+  g
 
   ## Installation
-  like this.
+  g
 
   ## Usage
-  like this.
+  g
 
   ## Contribution
   undefined
@@ -32,5 +32,5 @@
   ## Questions
   Have Questions about this project?
   #Github https://github.com/undefined
-  #EMail cla.givens@gmail.com
+  #EMail g
 

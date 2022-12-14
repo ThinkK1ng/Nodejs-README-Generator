@@ -22,7 +22,7 @@ function renderLicenseBadge(license) {
       break;
   }
 
-  return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
+  return `![License: ${badge.name}](https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
 }
 
 function renderLicenseLink(license) {
@@ -80,17 +80,17 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contribution
-  ${data.guidelines}
+  ${data.contributions}
 
   ## Tests
-  ${data.instructions}
+  ${data.tests}
 
   ${renderLicenseSection(data.license)}
 
   ## Questions
   Have Questions about this project?
   #Github https://github.com/${data.username}
-  #EMail ${data.email}
+  #Email ${data.email}
 
 `;
 }
