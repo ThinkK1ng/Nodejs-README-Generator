@@ -1,6 +1,6 @@
-# g
+# README.md Generator
 
-  ![License: Apache+2.0](https://img.shields.io/static/v1?label=license&message=Apache+2.0&color=green)
+  ![License: MIT](https://img.shields.io/static/v1?label=license&message=MIT&color=brightgreen)
 
   ## Table of Contents:
   *[Description](#Description)
@@ -13,24 +13,24 @@
   *[Email](#Email)
 
   ## Descritpion
-  g
+  An automated README.md generator that uses the Inquirer NPM, File System (FS), and Node.js to automatically create README markdown files.
 
   ## Installation
-  g
+  The README Generator require acces to an IDE such as Visual Studio Code (VS Code) as well as access to GitBasg/Command Line Interface (CLI). The download and installation of Node.js is also required as well as the installation of inquierer following that.
 
   ## Usage
-  g
+  To use the README Generator run: "Node index" in the terminal and answer the prompts. After the prompts are answered, open the new README.md created in the current working directory, and preview the README.
 
   ## Contribution
   undefined
 
   ## Tests
-  undefined
+  please make sure to update tests when necessary.
 
   
 
   ## Questions
   Have Questions about this project?
   #Github https://github.com/undefined
-  #EMail g
+  #Email cla.givens@gmail.com
 

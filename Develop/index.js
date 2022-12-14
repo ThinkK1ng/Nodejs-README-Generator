@@ -1,6 +1,5 @@
 const generateMarkdown = require("./utils/generateMarkdown");
 
-
 function init() {
 
     const inquirer = require("inquirer");
