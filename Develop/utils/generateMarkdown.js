@@ -1,7 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    let badge;
+  let badge;
   
   switch (license) {
     case "GNU AGPLv3":
@@ -10,37 +8,89 @@ function renderLicenseBadge(license) {
     case "GNU GPLv3":
       badge = { name: "GNU+GPLv3", color: "red" };
       break;
-    case "GNU LGPLv3":
-      badge = { name: "GNU+LGPLv3", color: "blue" };
-      break;
     case "Mozilla Public License 2.0":
       badge = { name: "Mozilla+2.0", color: "yellow" };
       break;
     case "Apache License 2.0":
       badge = { name: "Apache+2.0", color: "green" };
       break;
-    case "MIT License":
+    case "MIT":
       badge = { name: "MIT", color: "brightgreen" };
-      break;
-    case "Boost Software License 1.0":
-      badge = { name: "Boost+Software+1.0", color: "yellowgreen" };
       break;
     case "The Unlicense":
       badge = { name: "The+Unlicense", color: "blueviolet" };
       break;
+  }
+
+  return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'GNU AGPLv3') {
+    return `https://www.gnu.org/licenses/agpl-3.0`
+  }
+  if (license === 'GNU GPLv3') {
+    return `https://www.gnu.org/licenses/gpl-3.0`
+  }
+  if (license === 'Mozilla Public License 2.0') {
+    return `https://opensource.org/licenses/MPL-2.0`
+  }
+  if (license === 'Apache License 2.0') {
+    return `https://opensource.org/licenses/Apache-2.0`
+  }
+  if (license === 'MIT') {
+    return `https://opensource.org/licenses/MIT`
+  }
+  if (license === 'The Unlicense') {
+    return `https://unlicense.org/`
+  }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license) {
+    return ``;
+  } else {
+    return `##License
+    This Project is covered under the ${license} license. To learn more about twhat this means, click the license button.`
+  }
+}
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
+  ## Table of Contents:
+  *[Description](#Description)
+  *[Installation](#Installation)
+  *[Usage Information](#Usage)
+  *[Contribution](#Contribution)
+  *[Test Instructions](#Tests)
+  *[License](#License)
+  *[GitHub](#GitHub)
+  *[Email](#Email)
+
+  ## Descritpion
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contribution
+  ${data.guidelines}
+
+  ## Tests
+  ${data.instructions}
+
+  ${renderLicenseSection(data.license)}
+
+  ## Questions
+  Have Questions about this project?
+  #Github https://github.com/${data.username}
+  #EMail ${data.email}
 
 `;
 }
